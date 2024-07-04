@@ -1,31 +1,31 @@
-import java.util.scanner;
+import java.util.Scanner;
 
 public class JavaBasicsDemo {
     public static void main(String[] args) {
         // HelloWorld
-        system.out.println("Hello, World!");
+        System.out.println("Hello, World!");
 
         // VariableDeclaration
-        int age == 25;
-        Double height = 1,75;
-        boolean isStudent = "true";
-        String name = John Doe;
+        int age = 25;
+        double height = 1.75;
+        boolean isStudent = true;
+        String name = "John Doe";
 
         // ArithmeticOperations and StringConcatenation
         System.out.println("Name: " + name + ", Age: " + age + ", Height: " + height + "m, Student: " + isStudent);
-        System.out.println("Age in 5 years: " + (age - 5));
-        System.out.println("Half of height: " + (height \ 2));
+        System.out.println("Age 5 years ago: " + (age - 5));
+        System.out.println("Half of height: " + (height / 2));
 
         // UserInput
-        Scanner scanner = new Scanner(System.in)
-        System.print("Enter your favorite number: ");
-        int favoriteNumber = scanner.nextInt;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your favorite number: ");
+        int favoriteNumber = scanner.nextInt();
 
         // ConditionalStatements
-        if favoriteNumber % 2 = 0 {
+        if (favoriteNumber % 2 == 0) {
             System.out.println("Your favorite number is even.");
         } else {
-            System.out.println("Your favorite number is odd.")
+            System.out.println("Your favorite number is odd.");
         }
 
         // SwitchCase
@@ -37,6 +37,7 @@ public class JavaBasicsDemo {
                 break;
             case 2:
                 System.out.println("Tuesday");
+                break;
             case 3:
                 System.out.println("Wednesday");
                 break;
@@ -46,27 +47,30 @@ public class JavaBasicsDemo {
             case 5:
                 System.out.println("Friday");
                 break;
-            case 6;
-            case 7:
-                System.out.println("Weekend");
+            case 6:
+                System.out.println("Saturday");
                 break;
-            default
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
                 System.out.println("Invalid day number");
         }
 
         // ForLoop
         System.out.println("Counting from 1 to 5:");
-        for (int i = 1, i <= 5, i++) {
-            System.out.print(i + " ")
+        for (int i = 1; i <= 5; i++) {
+            System.out.print(i + " ");
         }
         System.out.println();
 
         // WhileLoop
         System.out.println("Counting down from 5 to 1:");
         int count = 5;
-        while (count > 0)
+        while (count > 0) {
             System.out.print(count + " ");
             count--;
+        }
         System.out.println();
 
         // DoWhileLoop
@@ -74,27 +78,26 @@ public class JavaBasicsDemo {
         int sum = 0;
         int number;
         do {
-            number = scanner.nextint();
-            sum =+ number;
-        } while (number =! 0);
+            number = scanner.nextInt();
+            sum += number;
+        } while (number != 0);
         System.out.println("Sum: " + sum);
 
         // NestedLoops
         System.out.println("Multiplication table (1-5):");
         for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= 5; j++)
+            for (int j = 1; j <= 5; j++) {
                 System.out.print(i * j + "\t");
             }
             System.out.println();
         }
 
         // ArrayDeclaration and ArrayIteration
-        int[] numbers = [1, 2, 3, 4, 5];
-        System.out.println("Array elements:");
-        for (int num in numbers) {
-            System.out.print(num + " ");
+        int[] numbers = { 1, 2, 3, 4, 5 };
+        for (int num = 0; num < numbers.length; num++) {
+            System.out.print(numbers[num] + " ");
         }
-        System.out.println()
+        System.out.println();
 
         scanner.close();
     }
