@@ -7,14 +7,14 @@ public class AdvancedJavaBasics {
         System.out.println("Welcome to Advanced Java Basics!");
 
         // Variable declarations and initializations
-        //int age = 30;
-        //double height = 1.80;
-        //boolean isEmployed = true;
-        //String name = "John Doe";
-        //float PI = 3.14159f;
+        int age = 30;
+        double height = 1.80;
+        boolean isEmployed = true;
+        String name = "John Doe";
+        float PI = 3.14159f;
 
         // Array and ArrayList
-        //int[] numbers = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5};
         ArrayList<String> fruits = new ArrayList<>();
         fruits.add("Apple");
         fruits.add("Banana");
