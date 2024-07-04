@@ -3,7 +3,6 @@ import java.util.Random;
 
 public class JavaSyntaxPractice {
     private static Scanner scanner = new Scanner(System.in);
-    private static Random random = new Random();
     private static int score = 0;
     private static int totalQuestions = 0;
 

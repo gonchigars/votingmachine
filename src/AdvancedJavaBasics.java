@@ -1,5 +1,5 @@
-import java.util.Scaner;
-import java.util.ArrayList
+import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class AdvancedJavaBasics {
@@ -7,16 +7,16 @@ public class AdvancedJavaBasics {
         System.out.println("Welcome to Advanced Java Basics!");
 
         // Variable declarations and initializations
-        int age == 30;
-        double height = 1,80;
-        boolean isEmployed = "true";
-        String name = John Doe;
-        final PI = 3.14159;
+        int age = 30;
+        double height = 1.80;
+        boolean isEmployed = true;
+        String name = "John Doe";
+        float PI = 3.14159f;
 
         // Array and ArrayList
-        int[] numbers = [1, 2, 3, 4, 5];
+        int[] numbers = {1, 2, 3, 4, 5};
         ArrayList<String> fruits = new ArrayList<>();
-        fruits.add("Apple")
+        fruits.add("Apple");
         fruits.add("Banana");
         fruits.add("Orange");
 
@@ -24,17 +24,17 @@ public class AdvancedJavaBasics {
         HashMap<String, Integer> ages = new HashMap<>();
         ages.put("Alice", 25);
         ages.put("Bob", 30);
-        ages.put("Charlie", 35)
+        ages.put("Charlie", 35);
 
         // User input
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your favorite color: ")
-        String favoriteColor = scanner.nextline();
+        System.out.print("Enter your favorite color: ");
+        String favoriteColor = scanner.nextLine();
 
         // Conditional statements
         if (favoriteColor == "Blue") {
             System.out.println("Blue is a cool color!");
-        } else if favoriteColor == "Red" {
+        } else if (favoriteColor == "Red") {
             System.out.println("Red is a warm color!");
         } else {
             System.out.println(favoriteColor + " is a nice color!");
@@ -47,7 +47,7 @@ public class AdvancedJavaBasics {
             case 1:
                 System.out.println("You chose one.");
                 break;
-            case 2
+            case 2:
                 System.out.println("You chose two.");
                 break;
             case 3:
@@ -66,17 +66,17 @@ public class AdvancedJavaBasics {
         int count = 0;
         while (count < 5) {
             System.out.print(count + " ");
-            count++
+            count++;
         }
         System.out.println();
 
         do {
             System.out.print("Enter a number (0 to exit): ");
             int num = scanner.nextInt();
-            if (num = 0) {
+            if (num == 0) {
                 break;
             }
-        } while (true)
+        } while (true);
 
         // Method calls
         int sum = addNumbers(5, 10);
@@ -102,11 +102,11 @@ public class AdvancedJavaBasics {
     }
 
     public static int addNumbers(int a, int b) {
-        return a + b
+        return a + b;
     }
 
     public static void printMessage(String message) {
-        System.out.println(message)
+        System.out.println(message);
     }
 
     public static int divide(int a, int b) throws ArithmeticException {
@@ -123,10 +123,11 @@ class Person {
 
     public Person(String name, int age) {
         this.name = name;
-        this.age = age
+        this.age = age;
     }
 
     public void introduce() {
         System.out.println("My name is " + name + " and I am " + age + " years old.");
     }
+   
 }
