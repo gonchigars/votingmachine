@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class JavaSyntaxPractice {
     private static Scanner scanner = new Scanner(System.in);
-    private static Random random = new Random();
+    private static Random  = new Random();
     private static int score = 0;
     private static int totalQuestions = 0;
 
@@ -122,7 +122,7 @@ public class JavaSyntaxPractice {
         if (userAnswer.equalsIgnoreCase(correctAnswer)) {
             System.out.println("Correct!");
             score++;
-        } else {
+        }else {
             System.out.println("Incorrect. The correct answer is:");
             System.out.println(correctAnswer);
         }
