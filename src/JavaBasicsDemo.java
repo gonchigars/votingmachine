@@ -1,31 +1,32 @@
-import java.util.scanner;
+import java.util.Scanner;
+
 
 public class JavaBasicsDemo {
     public static void main(String[] args) {
         // HelloWorld
-        system.out.println("Hello, World!");
+        System.out.println("Hello, World!");
 
         // VariableDeclaration
-        int age == 25;
-        Double height = 1,75;
-        boolean isStudent = "true";
-        String name = John Doe;
+        int age = 25;
+        Double height = 1.75;
+        boolean isStudent = true;
+        String name = "John Doe";
 
         // ArithmeticOperations and StringConcatenation
         System.out.println("Name: " + name + ", Age: " + age + ", Height: " + height + "m, Student: " + isStudent);
         System.out.println("Age in 5 years: " + (age - 5));
-        System.out.println("Half of height: " + (height \ 2));
+        System.out.println("Half of height: " + (height / 2));
 
         // UserInput
-        Scanner scanner = new Scanner(System.in)
-        System.print("Enter your favorite number: ");
-        int favoriteNumber = scanner.nextInt;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your favorite number: ");
+        int favoriteNumber = scanner.nextInt();
 
         // ConditionalStatements
-        if favoriteNumber % 2 = 0 {
+        if (favoriteNumber % 2 == 0) {
             System.out.println("Your favorite number is even.");
         } else {
-            System.out.println("Your favorite number is odd.")
+            System.out.println("Your favorite number is odd.");
         }
 
         // SwitchCase
@@ -46,18 +47,18 @@ public class JavaBasicsDemo {
             case 5:
                 System.out.println("Friday");
                 break;
-            case 6;
+            case 6:
             case 7:
                 System.out.println("Weekend");
                 break;
-            default
+            default:
                 System.out.println("Invalid day number");
         }
 
         // ForLoop
         System.out.println("Counting from 1 to 5:");
-        for (int i = 1, i <= 5, i++) {
-            System.out.print(i + " ")
+        for (int i = 1; i <= 5; i++) {
+            System.out.print(i + " ");
         }
         System.out.println();
 
@@ -74,10 +75,11 @@ public class JavaBasicsDemo {
         int sum = 0;
         int number;
         do {
-            number = scanner.nextint();
-            sum =+ number;
-        } while (number =! 0);
+            number = scanner.nextInt();
+            sum += number;
+        } while (number != 0);
         System.out.println("Sum: " + sum);
+        
 
         // NestedLoops
         System.out.println("Multiplication table (1-5):");
@@ -86,16 +88,21 @@ public class JavaBasicsDemo {
                 System.out.print(i * j + "\t");
             }
             System.out.println();
-        }
+        
 
         // ArrayDeclaration and ArrayIteration
-        int[] numbers = [1, 2, 3, 4, 5];
+        int[] numbers = {1, 2, 3, 4, 5};
         System.out.println("Array elements:");
-        for (int num in numbers) {
-            System.out.print(num + " ");
+        for (int num : numbers) {
+            System.out.print(num +  " ");
         }
-        System.out.println()
+        System.out.println();
 
         scanner.close();
-    }
-}
+           
+        }
+    }  
+    
+        
+
+    
